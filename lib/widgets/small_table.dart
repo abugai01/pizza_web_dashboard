@@ -1,17 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:pizza_web_dashboard/constants/error_messages.dart';
-import 'package:pizza_web_dashboard/routing/navigation_controller.dart';
-import 'package:pizza_web_dashboard/models/helpers/table_elem.dart';
-import 'package:pizza_web_dashboard/models/order.dart';
-import 'package:pizza_web_dashboard/pages/orders/widgets/assign_executor_selection_window.dart';
-import 'package:pizza_web_dashboard/pages/orders/widgets/dropdown_field.dart';
-import 'package:pizza_web_dashboard/widgets/table_button.dart';
-import 'package:data_table_2/data_table_2.dart';
-import 'package:intl/intl.dart';
 import 'package:pizza_web_dashboard/config/style.dart';
-import 'package:pizza_web_dashboard/routing/routes.dart';
 import 'package:pizza_web_dashboard/widgets/custom_text.dart';
 
 class SmallTable extends StatelessWidget {
@@ -74,29 +63,6 @@ class SmallTable extends StatelessWidget {
 
   List<DataRow> genRows(List<List<String?>?> values) => List<DataRow>.generate(
       values.length, (index) => DataRow(cells: genCells(values[index])));
-
-  // List<DataColumn> genColumns(List<TableElem> data) {
-  //   List<DataColumn> res = [];
-  //
-  //   for (int i = 0; i < data.length; i++) {
-  //     res.add(DataColumn(label: Text(data[i].columnName)));
-  //   }
-  //
-  //   return res;
-  // }
-  //
-  // List<DataCell> genCells(List<TableElem> data) {
-  //   List<DataCell> res = [];
-  //
-  //   for (int i = 0; i < data.length; i++) {
-  //     res.add(DataCell(CustomText(text: data[i].value)));
-  //   }
-  //
-  //   return res;
-  // }
-  //
-  // List<DataRow> genRows(List<TableElem> data) => List<DataRow>.generate(
-  //     data.length, (index) => DataRow(cells: genCells(data)));
 
   bool validate(
       {required List<String?>? columns,

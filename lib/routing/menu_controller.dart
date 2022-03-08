@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pizza_web_dashboard/config/style.dart';
 import 'package:pizza_web_dashboard/routing/menu_items.dart';
-import 'package:pizza_web_dashboard/routing/routes.dart';
 
 class MenuController {
   static MenuController instance =
@@ -28,14 +27,8 @@ class MenuController {
         return _customIcon(Icons.trending_up, itemName);
       case usersPageDisplayName:
         return _customIcon(Icons.people_alt_outlined, itemName);
-      case executorsPageDisplayName:
-        return _customIcon(Icons.directions_walk_outlined, itemName);
       case ordersPageDisplayName:
         return _customIcon(Icons.format_list_numbered_outlined, itemName);
-      case servicesPageDisplayName:
-        return _customIcon(Icons.paid_outlined, itemName);
-      case mapPageDisplayName:
-        return _customIcon(Icons.public_outlined, itemName);
       case statsPageDisplayName:
         return _customIcon(Icons.insights_outlined, itemName);
       case paymentsPageDisplayName:

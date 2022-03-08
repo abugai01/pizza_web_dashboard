@@ -54,14 +54,8 @@ class RouteGenerator {
         return _overview();
       case Routes.users:
         return _users();
-      case Routes.executors:
-        return _executors();
       case Routes.orders:
         return _orders();
-      case Routes.services:
-        return _services();
-      case Routes.map:
-        return _map();
       case Routes.stats:
         return _stats();
       case Routes.payments:
@@ -74,20 +68,6 @@ class RouteGenerator {
         return _user(userId ?? id);
       case Routes.order:
         return _order(orderId ?? id);
-      case Routes.executor:
-        return _executor(executorId ?? id);
-      case Routes.executorsPayments:
-        return _executorsPayments();
-      case Routes.executorsUnallowed:
-        return _executorsUnallowed();
-      case Routes.userPets:
-        return _userPets(userId ?? id);
-      case Routes.executorReviews:
-        return _executorReviews(executorId ?? id);
-      case Routes.orderMap:
-        return _orderMap(orderId ?? id);
-      case Routes.pet:
-        return _pet(userId, petId);
       default:
         return _overview();
     }

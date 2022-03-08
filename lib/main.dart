@@ -7,13 +7,15 @@ import 'package:pizza_web_dashboard/services/auth.dart';
 import 'package:pizza_web_dashboard/services/database.dart';
 import 'package:provider/provider.dart';
 
+import 'firebase_options.dart';
+
 //todo: make sure only admins have access!
 //todo: english everywhere!
 //todo: reuse individual widgets as much as possible!!!
 //todo: protect database with security rules!! as keys are available in the config
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(MyApp());
 }
 
@@ -33,10 +35,6 @@ class MyApp extends StatelessWidget {
             scaffoldBackgroundColor: light,
             textTheme: GoogleFonts.robotoTextTheme(Theme.of(context).textTheme)
                 .apply(bodyColor: Colors.black),
-            // pageTransitionsTheme: PageTransitionsTheme(builders: {
-            //   TargetPlatform.iOS: FadeUpwardsPageTransitionsBuilder(),
-            //   TargetPlatform.android: FadeUpwardsPageTransitionsBuilder(),
-            // }),
             primarySwatch: Colors.blue,
           ),
           //home: HomePage(),

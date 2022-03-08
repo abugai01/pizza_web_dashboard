@@ -43,38 +43,33 @@
   <script src="main.dart.js" type="application/javascript"></script>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
 
   <!-- TODO: Add SDKs for Firebase products that you want to use
       https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-functions.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
 
-  //todo: it is not safe to upload to github!!
+<!--  <script type="module">-->
+<!--    // Import the functions you need from the SDKs you need-->
+<!--    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";-->
 
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
+<!--    // Your web app's Firebase configuration-->
+<!--    const firebaseConfig = {-->
+<!--      apiKey: "AIzaSyAdt-su-gg5dCtuE83Ty-GizPbf1RM1RHM",-->
+<!--      authDomain: "marioplan-ffae6.firebaseapp.com",-->
+<!--      databaseURL: "https://marioplan-ffae6.firebaseio.com",-->
+<!--      projectId: "marioplan-ffae6",-->
+<!--      storageBucket: "marioplan-ffae6.appspot.com",-->
+<!--      messagingSenderId: "762400501603",-->
+<!--      appId: "1:762400501603:web:92efdf28bffb97a0e0ad56"-->
+<!--    };-->
 
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyAdt-su-gg5dCtuE83Ty-GizPbf1RM1RHM",
-      authDomain: "marioplan-ffae6.firebaseapp.com",
-      databaseURL: "https://marioplan-ffae6.firebaseio.com",
-      projectId: "marioplan-ffae6",
-      storageBucket: "marioplan-ffae6.appspot.com",
-      messagingSenderId: "762400501603",
-      appId: "1:762400501603:web:92efdf28bffb97a0e0ad56"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-
-    //TODO: initializa firestore and auth
-    //firebase.firestore();
-    //firebase.auth();
-  </script>
+<!--    // Initialize Firebase-->
+<!--    const app = initializeApp(firebaseConfig);-->
+<!--    const db = getFirestore(app);-->
+<!--    const auth = getAuth();-->
+<!--  </script>-->
 
 </body>
 </html>
